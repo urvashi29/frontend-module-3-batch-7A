@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table</title>
+
+    <!-- internal css -->
+    <style>
+        /* select all the td, table, th from body tag */
+        table, th, td {
+            border: 2px solid palevioletred;
+            border-collapse: collapse;
+        }
+    </style>
+
+  </head>
+
+  <body>
+    <header></header>
+
+    <main>
+      <section">
+        <table>
+          <!-- tr -> table row 
+            td-> table cell -->
+
+          <caption>
+            Food Menu
+          </caption>
+
+          <thead>
+          <tr>
+            <th>S. No</th>
+            <th>Veg</th>
+            <th>Non-Veg</th>
+            <th>Sweets</th>
+            <th>Beverages</th>
+          </tr>
+          ></thead>
+
+          <tbody>
+          <tr>
+            <td>1</td>
+            <td>Chole Bhature</td>
+            <td>Butter Chicken</td>
+            <td>Kaju Katli</td>
+            <td rowspan="2">Coke</td>
+          </tr>
+
+          <tr>
+            <td>2</td>
+            <td></td>
+            <td>Seekh Kabab</td>
+            <td>Rasagulla</td>
+            <!-- <td>Coke</td> -->
+          </tr>
+
+          <tr>
+            <td>3</td>
+            <td>Paneer Mushroom</td>
+            <td>Fish Curry</td>
+            <td>Pudding</td>
+            <td>Mojito</td>
+          </tr>
+
+          <tr>
+            <td>4</td>
+            <td>Veg Roll</td>
+            <td>Chicken Gravy</td>
+            <td>Gulab Jamun</td>
+            <td>Hot Coffee</td>
+          </tr>
+
+          <tr>
+            <td>5</td>
+            <td colspan="2">Briyani</td>
+            <!-- <td>Briyani</td> -->
+            <td>Tiramisu</td>
+            <td>Coconut Water
+                <!-- nesting table -->
+                <table></table>
+            </td>
+          </tr>
+        </tbody>
+
+        </table>
+      </section>
+
+      <section></section>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>
