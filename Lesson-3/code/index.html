@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+
+  <body>
+    <header></header>
+
+    <main>
+      <section>
+        <h2>Forms</h2>
+
+        <!-- get -> signin/Login
+       post -> signup/ register -->
+        <form method="get" action="./submit.html" target="_blank">
+          <label for="firstname">First Name</label>
+          <input
+            type="text"
+            placeholder="Please enter name"
+            name="firstname"
+            value="abc"
+            readonly
+            maxlength="3"
+            minlength="1"
+          />
+
+          <label for="age">Enter age</label>
+          <input
+            type="number"
+            placeholder="Please enter age"
+            name="age"
+            value=""
+            required
+            max="20"
+            min="1"
+          />
+
+          <label for="email"></label>
+          <input
+            type="email"
+            placeholder="Please enter email"
+            name="email"
+            value=""
+            required
+          />
+
+          <label for="pwd">Password</label>
+          <input
+            type="password"
+            placeholder="Please enter password"
+            name="pwd"
+            value=""
+            disabled
+          />
+
+          <!-- Radio -->
+          <input type="radio" name="genderm" value="male" />
+          <label for="genderm">Male</label>
+
+          <input type="radio" name="genderf" value="female" />
+          <label for="genderf">Female</label>
+
+          <!-- date & time -->
+          <label>Travel Date</label>
+          <input type="date" />
+
+          <label>Travel Time</label>
+          <input type="time" />
+
+          <!-- selecting file -->
+          <label>Upload Resume</label>
+          <input type="file" name="resume" multiple />
+
+          <!-- dropdown -->
+          <label for="country">Select Country</label>
+          <select name="country">
+            <option value="australia">Australia</option>
+            <option value="india">India</option>
+            <option value="usa">USA</option>
+          </select>
+
+          <textarea name="about" rows="10" cols="20">
+Tell me about yourself!</textarea
+          >
+
+          <button type="button">Add To Cart</button>
+
+          <button type="submit">Submit</button>
+
+          <button disabled>Disabled</button>
+
+          <button type="reset">Reset</button>
+        </form>
+
+        <form>
+          <fieldset>
+            <legend>Contact Us</legend>
+
+            <label>Enter name</label>
+            <input type="text" />
+          </fieldset>
+
+          <fieldset>
+            <legend>Academic Details</legend>
+          </fieldset>
+        </form>
+      </section>
+
+      <section>
+        <!-- iframe -->
+        <iframe
+          src="https://file-examples.com/index.php/sample-images-download/"
+          width="400px"
+          height="400px"
+        ></iframe>
+
+        <!-- google maps -->
+        <iframe
+          src="https://www.google.co.in/maps/dir/Mumbai,+Maharashtra/Pune,+Maharashtra/@18.5248706,73.6981481,11z/data=!4m13!4m12!1m5!1m1!1s0x3be7c6306644edc1:0x5da4ed8f8d648c69!2m2!1d72.8776559!2d19.0759837!1m5!1m1!1s0x3bc2bf2e67461101:0x828d43bf9d9ee343!2m2!1d73.8567437!2d18.5204303?entry=ttu&g_ep=EgoyMDI0MTAyMy4wIKXMDSoASAFQAw%3D%3D"
+          width="400px"
+          height="400px"
+        ></iframe>
+
+        <!-- Youtube link -->
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/JjvN_hYDp3g?si=sxf70wnDXzlbuSrh"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ERClHCOF14c?si=o42Im2oYbrRzVfvb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </section>
+
+      <section>
+        <div>
+          <div></div>
+        </div>
+      </section>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>
