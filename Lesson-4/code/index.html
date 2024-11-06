@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS</title>
+
+    <!-- internal css-->
+    <style>
+      /*  syntax
+       selector {
+        Declaration block
+        styling-property: value
+      } */
+
+      /* universal selector (*): all the elements */
+      * {
+        font-size: 20px;
+      }
+
+      /* element selector */
+      h2 {
+        color: palevioletred;
+      }
+
+      p {
+        color: aquamarine;
+      }
+
+      /* id seletor (#) */
+      #sample {
+        color: palegreen;
+      }
+
+      /* class selector (.) */
+      .test {
+        color: blue;
+        background-color: blueviolet;
+      }
+
+      /* group selector (,) */
+      h2,
+      #sample {
+        background-color: yellow;
+      }
+      
+    </style>
+
+    <!-- external css -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <h2>Hello!</h2>
+    <div class="test">Lorem, ipsum.</div>
+
+    <!-- inline css -->
+    <p style="color: red; text-align: center">Almabetter</p>
+
+    <h2>Welcome!</h2>
+    <p>Hello World!</p>
+
+    <div id="sample">Almabetter</div>
+
+    <div class="test">Lorem ipsum dolor sit.</div>
+  </body>
+</html>
+
+<!-- Emailers (Internal css) -->
+<!-- id & class & style are global attribute -->
