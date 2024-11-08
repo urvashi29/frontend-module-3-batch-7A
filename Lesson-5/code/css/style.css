@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#text {
+  color: blueviolet;
+
+  /* left, center, right */
+  text-align: center;
+
+  /* overline, underline, line-through */
+  text-decoration: none;
+
+  /* uppercase, lowercase */
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  line-height: 0.8;
+  word-spacing: 2px;
+
+  font-size: 20px;
+  font-weight: bold;
+  font-style: italic;
+  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+
+#background {
+  height: 400px;
+  background-color: yellow;
+
+  background-image: url("../images/download.png");
+
+  /* no-repeat, repeat, repeat-y, repeat-x */
+  background-repeat: no-repeat;
+
+  /* (parallex effect) */
+  background-attachment: fixed;
+
+  /* left bottom, right-bottom, right top */
+  background-position: center;
+
+  background-size: cover;
+
+  /* property shorthand*/
+  /* background: green url() no-repeat right top cover; */
+}
+
+/* descendant (space) */
+#list p {
+  color: orange;
+}
+
+/* #list span {
+
+} */
+
+/* child selector (>): select the direct child*/
+#list > li {
+  color: white;
+  background-color: palevioletred;
+}
+
+/* general sibling selector (~) */
+#list ~ h2 {
+  color: green;
+}
+
+/* adjacent sibling selector (+) */
+#list + p {
+  color: aquamarine;
+}
+
+.flex-container,
+.container {
+  height: 450px;
+  background-color: yellow;
+  display: flex;
+  flex-direction: row;
+
+  /* horizontal */
+  /* space-around, space-between, flex-start, center, flex-end */
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+
+  /* vertical */
+  /* space-around, space-between, flex-start, center, flex-end */
+
+  align-content: space-between;
+}
+
+.flex-container > div {
+  border: 2px solid black;
+  background-color: palevioletred;
+  height: 200px;
+  width: 24%;
+}
+
+.container > div{
+  border: 2px solid orange;
+  background-color: teal;
+  height: 200px;
+  width: 20%;
+}
