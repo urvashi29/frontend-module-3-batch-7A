@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Display */
+.layout-inline {
+  display: inline;
+}
+
+img {
+  display: block;
+}
+
+#display {
+  display: inline-block;
+  width: 100px;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+/* Position */
+#style-position {
+  /* All the html elements by default are positioned static */
+  position: static;
+}
+
+#style-rel {
+  border: 2px solid black;
+  width: 200px;
+  height: 100px;
+  position: relative;
+  top: 20px;
+  right: 20px;
+  bottom: 20px;
+  left: 20px;
+}
+
+#style-abs {
+  width: 50px;
+  height: 50px;
+  border: 2px solid red;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  bottom: 10px;
+  right: 10px;
+}
+
+.style-sticky {
+  position: sticky;
+  border: 2px solid palevioletred;
+  background-color: rgba(180, 275, 257, 0.6);
+  top: 0;
+  width: 100px;
+}
+
+#list-items {
+  list-style-type: none;
+  background-color: orange;
+  text-align: right;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+#list-items > li {
+  display: inline-block;
+  padding: 10px;
+  color: white;
+}
+
+#transparent {
+  width: 200px;
+  height: 200px;
+  background-color: rgba(255, 255, 0, 0.4);
+  border: 2px solid black;
+  /* opacity: 0.4; */
+}
+
+/* Animations */
+#animate {
+  width: 200px;
+  height: 200px;
+  background-color: yellow;
+  border: 2px solid black;
+
+  animation-name: animate;
+
+  /* durcation in which animation will complete */
+  animation-duration: 4s;
+
+  /* animation start after delay secondss */
+  animation-delay: 2s;
+
+  /* speed */
+  animation-timing-function: ease;
+
+  /* number of animation will repeat  */
+  animation-iteration-count: infinite;
+
+  animation-direction: alternate-reverse;
+}
+
+@keyframes animate {
+  0% {
+    background-color: yellow;
+  }
+
+  25% {
+    background-color: aquamarine;
+  }
+
+  50% {
+    background-color: yellowgreen;
+  }
+
+  75% {
+    background-color: blue;
+  }
+
+  100% {
+    background-color: brown;
+  }
+}
+
+#bounce {
+  width: 100px;
+  height: 100px;
+  background-color: orange;
+  border-radius: 50%;
+
+  animation-name: bounce;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+
+@keyframes bounce {
+  from {
+    margin-top: 0px;
+  }
+
+  to {
+    margin-top: 250px;
+    /* transform: translate(0, 250px); */
+  }
+}
+
+/* Transition */
+#transition {
+  width: 100px;
+  height: 100px;
+  background-color: palevioletred;
+  border: 2px solid black;
+
+  /* transition-timing-function: ease;
+  transition-duration: 2s;
+  transition-delay: 1s;
+  transition-property: background-color; */
+
+  transition: width 2s 1s ease, background-color 4s 1s ease,
+    border-radius 1s 1s ease-in, box-shadow 1s 1s ease;
+}
+
+#transition:hover {
+  /* width: 200px; */
+  background-color: paleturquoise;
+  border-radius: 50%;
+  box-shadow: 2px 2px 2px pink;
+}
+
+#transform {
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+  border: 2px solid black;
+  margin-left: 100px;
+}
+
+#transform:hover {
+  /* 2 times width & height */
+  /* transform: scale(1.5, 2); */
+
+  /* transform: rotate(45deg); */
+
+  /* transform: translate(50px, 50px); */
+
+  transform: skew(-20deg);
+
+  /* transform: scale(1.5, 2) rotate(45deg); */
+}
