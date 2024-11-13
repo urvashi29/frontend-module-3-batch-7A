@@ -1,0 +1,38 @@
+#media {
+  background-color: yellow;
+}
+
+/* mobiles, 0 value till 400px */
+@media screen and (max-width: 400px) {
+  #media {
+    background-color: aquamarine;
+  }
+}
+
+/* 600px and above */
+@media screen and (min-width: 600px) {
+  #media {
+    background-color: brown;
+  }
+}
+
+/* 768px & above */
+@media screen and (min-width: 768px) {
+  #media {
+    background-color: pink;
+  }
+}
+
+/* 992px & above */
+@media screen and (min-width: 992px) {
+  #media {
+    background-color: orange;
+  }
+}
+
+/* 1200px & above */
+@media screen and (min-width: 1200px) {
+  #media {
+    background-color: beige;
+  }
+}
