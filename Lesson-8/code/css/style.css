@@ -1,0 +1,7 @@
+.style-btn {
+  background-color: pink;
+}
+
+.style-btn:hover {
+  background-color: teal;
+}

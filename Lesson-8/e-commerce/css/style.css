@@ -1,0 +1,40 @@
+.header-background {
+  background-color: #0b2447;
+}
+
+.buttons {
+  background-color: #19376d;
+  color: #a5d7e8;
+  border: none;
+}
+
+.carousel {
+  margin-bottom: 4rem;
+}
+
+.carousel h1,
+.carousel p,
+.feature-heading {
+  color: #19376d;
+}
+
+.carousel-item {
+  height: 32rem;
+}
+
+footer p,
+footer,
+footer a {
+  color: white;
+  text-decoration: none;
+}
+footer h4 {
+  color: #a5d7e8;
+}
+
+footer form {
+  width: 300px;
+}
+footer {
+  background-color: #0b2447;
+}

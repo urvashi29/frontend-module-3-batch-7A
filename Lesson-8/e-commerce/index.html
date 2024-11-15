@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="px-3 py-2 text-white header-background">
+        <div class="container">
+          <div
+            class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"
+          >
+            <a
+              href="#"
+              class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none"
+            >
+              <p>Logo</p>
+            </a>
+
+            <ul
+              class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small"
+            >
+              <li>
+                <a href="./index.html" class="nav-link text-white"> Home </a>
+              </li>
+              <li>
+                <a href="./product.html" class="nav-link text-white">
+                  Products
+                </a>
+              </li>
+              <li>
+                <a href="./cart.html" class="nav-link text-white"> Cart </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <div class="px-3 py-2 border-bottom mb-3">
+        <div class="container d-flex flex-wrap justify-content-center">
+          <form class="col-12 col-lg-auto mb-2 mb-lg-0 me-lg-auto">
+            <input
+              type="search"
+              class="form-control"
+              placeholder="Search..."
+              aria-label="Search"
+            />
+          </form>
+
+          <div class="text-end">
+            <a href="./login.html"
+              ><button type="button" class="btn buttons me-2">Login</button></a
+            >
+            <a href="./signup.html"
+            <button type="button" class="btn buttons">Sign-up</button>
+          </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#myCarousel"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#myCarousel"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#myCarousel"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./images/slide-2.jpg" width="100%">
+              <div class="container">
+                <div class="carousel-caption text-start">
+                  <h1>Headline 1</h1>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, veritatis!
+                  </p>
+                  <p>
+                    <a class="btn btn-lg btn-primary buttons" href="./signup.html">Sign up today</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+             <img src="./images/slide-1.jpg" alt="" width="100%">
+
+              <div class="container">
+                <div class="carousel-caption">
+                  <h1>Headline 2</h1>
+                  <p>
+                   Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae, ipsam?
+                  </p>
+                  <p>
+                    <a class="btn btn-lg btn-primary buttons" href="./index.html">Learn more</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./images/slide-1.jpg" alt="" width="100%">
+
+              <div class="container">
+                <div class="carousel-caption text-start">
+                  <h1>Headline 3.</h1>
+                  <p>
+                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, veniam.
+                  </p>
+                  <p>
+                    <a class="btn btn-lg btn-primary buttons" href="./product.html"
+                      >Browse Products</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="container">
+        <hr/>
+
+        <div class="row">
+          <div class="col-md-7">
+            <h2 class="feature-heading">Section Heading 1</h2>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, praesentium!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, quibusdam error. Officia, aliquid aut nihil sapiente inventore labore minus culpa!
+            </p>
+          </div>
+          <div class="col-md-5">
+            <img src="./images/banner-2.jpg" width="100%" />
+          </div>
+        </div>
+
+        <hr />
+
+        <div class="row">
+          <div class="col-md-7 order-md-2">
+            <h2 class="feature-heading">Section Heading 2</h2>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, praesentium!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, quibusdam error. Officia, aliquid aut nihil sapiente inventore labore minus culpa!
+            </p>
+          </div>
+          <div class="col-md-5 order-md-1">
+            <img src="./images/banner-3.jpg"  width="100%"/>
+          </div>
+        </div>
+
+        <hr/>
+
+        <div class="row">
+          <div class="col-md-7">
+            <h2 class="feature-heading">Section Heading 3</h2>
+            </h2>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, praesentium!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, quibusdam error. Officia, aliquid aut nihil sapiente inventore labore minus culpa!
+
+            </p>
+          </div>
+          <div class="col-md-5">
+            <img src="./images/banner-2.jpg"  width="100%"/>
+          </div>
+        </div>
+
+        <hr />
+      </section>
+    </main>
+
+    <footer class="footer mt-5 py-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4 col-md-4 py-4">
+            <h4>About</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos voluptatibus unde ducimus dolore nemo sunt omnis! Nemo eum enim voluptatibus nostrum dolores doloremque ex quasi, numquam sapiente modi accusantium blanditiis inventore maiores magni quaerat, libero velit error? Corrupti, dolores sunt!
+            </p>
+          </div>
+          <div class="col-sm-4 col-md-4 py-4 text-center ">
+            <h4>Quick Links</h4>
+            <ul class="list-unstyled">
+              <li><a href="./product.html">Products</a></li>
+              <li><a href="./login.html">Login</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-4 col-md-4 py-4 text-center">
+            <h4>Subscribe to Newsletter</h4>
+            <form class="ms-auto me-auto">
+              <input
+                type="subscribe"
+                class="form-control"
+                placeholder="Subscribe..."
+              />
+              <button class="buttons mt-3">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+
+
+<!-- color palette: https://colorhunt.co/palette/0b244719376d576cbca5d7e8 -->
