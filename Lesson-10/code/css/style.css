@@ -1,0 +1,13 @@
+#sample {
+  background-color: black;
+  color: yellow;
+  width: 200px;
+  text-align: center;
+  font-size: 20px;
+  height: 40px;
+}
+
+#sample:hover {
+  color: orange;
+  background-color: olive;
+}
