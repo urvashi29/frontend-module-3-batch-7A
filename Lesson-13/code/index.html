@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>js</title>
+
+    <style>
+      .item {
+        background-color: yellow;
+        color: palevioletred;
+        font-size: 20px;
+      }
+
+      .style-heading {
+        font-style: italic;
+      }
+
+      .mouse-event {
+        background-color: aquamarine;
+      }
+    </style>
+    
+  </head>
+
+  <body onload="setTimeout(function (){ alert('hello')}, 2000)">
+    <p id="sample">Almabetter</p>
+    <h2 id="heading" class="style-heading">Lorem, ipsum.</h2>
+
+    <button onclick="toggleClass()">Toggle</button>
+
+    <!-- mouse events -->
+    <p onmousedown="alert('Mouse Down')" class="mouse-event">Mouse Down</p>
+    <p onmouseenter="alert('user entered!')" class="mouse-event">Mouse Enter</p>
+    <p onmouseleave="alert('user left!')" class="mouse-event">Mouse Leave</p>
+    <p onmouseup="alert('Mouse Up')" class="mouse-event">Mouse Up</p>
+
+    <!-- keyboard event -->
+    <form>
+      <input type="text" onkeydown="(alert('key down'))" />
+      <input type="text" onkeyup="alert('key up')" />
+      <input type="text" onkeypress="alert('key pressed')" />
+      <input type="text" onblur="alert('blurred!')" />
+      <input
+        type="text"
+        placeholder="Please enter name"
+        id="name"
+        onchange="validate()"
+      />
+    </form>
+
+    <form id="form">
+      <input type="text" placeholder="Please enter age" id="age" />
+      <button>Submit</button>
+    </form>
+
+    <p id="text"></p>
+
+    <form>
+      <input type="email" placeholder="Please enter email" id="email" />
+    </form>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
+
+<!-- Task
+create a form: name, age, email, salary. onsubmitted display the user data in UI -->
