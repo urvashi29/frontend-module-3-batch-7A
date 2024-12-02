@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>js</title>
+
+    <style>
+      #grandparent {
+        background-color: green;
+        height: 100px;
+      }
+
+      #parent {
+        background-color: yellow;
+        height: 60px;
+      }
+
+      #child {
+        background-color: orange;
+        height: 30px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="grandparent">
+      Grandparent
+      <div id="parent">
+        Parent
+        <div id="child">Child</div>
+      </div>
+    </div>
+
+    <div id="sample" style="background-color: palevioletred">
+      <button>1</button>
+      <button>2</button>
+      <button>3</button>
+    </div>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
