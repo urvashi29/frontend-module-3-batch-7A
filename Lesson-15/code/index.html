@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .dummy {
+        background-color: yellow;
+        color: palevioletred;
+      }
+
+      .sample {
+        background-color: orange;
+        color: white;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- selectors -->
+    <div>
+      <p id="demo">HTML</p>
+      <p class="test">CSS</p>
+      <button>Click Me!</button>
+    </div>
+
+    <ul>
+      <li>Mango</li>
+      <li>Orange</li>
+      <li>Apple</li>
+      <li>Cherry</li>
+    </ul>
+
+    <input type="checkbox" />
+
+    <!-- manipulation -->
+    <p class="dummy">Dummy <span>Hello</span></p>
+    <input type="text" value="Hello" id="name" />
+    <button id="btn">Click</button>
+
+    <a href="https://www.almabetter.com" target="_blank">Almabetter</a>
+
+    <!-- to add & remove elements -->
+    <ol>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JS</li>
+    </ol>
+
+    <button id="del">Add & Delete</button>
+
+    <!-- manipulating css -->
+    <button id="styles">Change</button>
+
+    <!-- Effects  -->
+    <div style="background-color: orange" id="box">Hello</div>
+    <button id="hide">hide</button>
+    <button id="show">show</button>
+    <button id="toggle">Toggle</button>
+
+    <button id="fadein">Fade In</button>
+    <button id="fadeout">Fade Out</button>
+    <button id="fadetoggle">Fade Toggle</button>
+
+    <!-- animate -->
+    <div
+      id="ani"
+      style="background-color: yellow; height: 100px; width: 100px"
+    ></div>
+    <button id="animate">Animate</button>
+
+    <!-- CDN link for Jquery -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
+
+<!-- Task
+1. Create 3 div(include h3, a(span inside anchor)): Capture its data when user click on <a>: get its attribute value(href) and heading value and display in UI.
+  <div>
+  <h3>Heading 3</h3>
+  <a href="alambetter">
+    <span>Almabter</span>
+  </a>
+</div>
+
+2. Add background Image on a button. Swap background image when user click on a button using Jquery. -->
