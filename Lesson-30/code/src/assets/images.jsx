@@ -1,0 +1,1 @@
+export const banner_image = "https://img.freepik.com/free-vector/flat-design-online-college-sale-banner-template_23-2150593113.jpg?t=st=1732550667~exp=1732554267~hmac=dce826f7bd5176cae27f89fd6d0ff958628f2b584b81c26b5b9f33e84372bbe3&w=1060";
