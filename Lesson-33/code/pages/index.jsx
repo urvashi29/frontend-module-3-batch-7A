@@ -93,12 +93,12 @@
 
 // SWR (client side rendering)
 import React from "react";
-import { useSWR } from "swr";
-
-const fetcher = (api) => fetch(api).then((res) => res.json());
-const { data } = useSWR("https://dummyjson.com/users", fetcher);
+import useSWR from "swr";
 
 const index = () => {
+  const fetcher = (api) => fetch(api).then((res) => res.json());
+  const { data } = useSWR("https://dummyjson.com/users", fetcher);
+  console.log(data);
   return <div></div>;
 };
 
